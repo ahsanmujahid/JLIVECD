@@ -93,9 +93,14 @@ sudo echo timeout_value > /usr/local/JLIVECD/main/timeout
 
 Special Feature:
 ----------------
-I call it debcache management! Just put your .deb files in "debcache" folder (look for it in the same directory where "edit" directory is located) and they won't be downloaded again in the software installation process if they are the current updated files....And you need not worry about the size of these files at all, because it won't affect anything...
+I call it debcache management! 
 
-You need to do this before you run the application... So if there's no debcache folder (must be a first run) you will have to create one with the name "debcache" without the quotes
+
+1.Just put your .deb files in edit/var/cache/apt/archives folder and they won't be downloaded again in the software installaion process.
+2.They will be moved automatically to a folder named debcache (located in the same directory as "edit") prior to image creation so that they won't be included in the iso image.
+3.You never need to delete .deb files from edit/var/cache/apt/archives manually and you shouldn't.
+4.If you don't delete the .deb files then you will never need to download them again as long as they remain the updated files according to your package list (which you get from apt-get update). debcache management will take proper measures to move the files to required places to minimize downloads of packages from internet.
+5.Altenatively, you can put the .deb files in "debcache" folder too, but in that case you need to run the application after you have finished copying files to this folder...
 
 
 Source Link:
