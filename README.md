@@ -93,7 +93,7 @@ sudo echo timeout_value > /usr/local/JLIVECD/main/timeout
 
 Special Feature:
 ----------------
-I call it debcache management! Just put your .deb files in "debcache" folder (look for it in the same directory where "edit" directory is located) and they won't be downloaded again in the software installtion process if they are the current updated files....And you need not worry about the size of these files at all, because it won't affect anything...
+I call it debcache management! Just put your .deb files in "debcache" folder (look for it in the same directory where "edit" directory is located) and they won't be downloaded again in the software installation process if they are the current updated files....And you need not worry about the size of these files at all, because it won't affect anything...
 
 
 Source Link:
